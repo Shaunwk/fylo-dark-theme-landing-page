@@ -294,13 +294,9 @@ body {
     margin-top: 1.5rem;
 }
 
-.error-message-hidden {
-    display: none;
-}
 
-.error-message {
+.error-container {
     color: var(--color-accent-red-error);
-    /* margin-bottom: 1rem; */
 }
 
 
