@@ -46,6 +46,21 @@ body {
   font-weight: 300;
   font-size: 0.75rem;
 }
+
+.features,
+.team,
+.sign-in {
+  opacity: 0.5;
+}
+
+:hover.features,
+:hover.team,
+:hover.sign-in {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .hero-background-blend {
   background: linear-gradient(
     to top,
@@ -95,6 +110,11 @@ body {
   border-radius: 5rem;
   border-style: none;
   margin-bottom: 8rem;
+}
+
+:hover.hero-button {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .card-section {
@@ -300,6 +320,11 @@ body {
   margin-top: 1.5rem;
 }
 
+:hover.submit-button {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .error-container {
   color: var(--color-accent-red-error);
 }
@@ -356,11 +381,30 @@ li {
   padding-bottom: 0.5rem;
 }
 
-.links {
-  padding: 1rem 0;
-}
+.links,
 .links2 {
   padding: 1rem 0;
+}
+
+.about-us,
+.jobs,
+.press,
+.blog,
+.contact-us,
+.terms,
+.privacy {
+  opacity: 0.7;
+}
+
+:hover.about-us,
+:hover.jobs,
+:hover.press,
+:hover.blog,
+:hover.contact-us,
+:hover.terms,
+:hover.privacy {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .social-links {
@@ -373,6 +417,17 @@ li {
 .social-icons {
   width: 35px;
 }
+
+:hover.social-icons {
+  background-color: var(--color-accent-cyan);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
+
+/* DESKTOP MEDIA QUERY */
 
 @media (min-width: 700px) {
   body {
@@ -553,7 +608,7 @@ li {
   }
 
   .call-to-action-title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
@@ -563,6 +618,7 @@ li {
     font-weight: 300;
     width: 80%;
     margin: 1.5rem auto;
+    font-size: 0.75rem;
   }
 
   .input-error-container {
@@ -587,5 +643,33 @@ li {
   .image-footer-container {
     max-width: 1100px;
     margin: 0 auto;
+    font-size: 0.75rem;
+    font-weight: 100;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .logo-footer {
+    width: 150px;
+  }
+
+  .location {
+    max-width: 20rem;
+  }
+
+  .social-links {
+    padding: 0 0 1rem 0;
+  }
+
+  .links {
+    padding: 0;
+  }
+  .links2 {
+    padding: 0;
   }
 }
